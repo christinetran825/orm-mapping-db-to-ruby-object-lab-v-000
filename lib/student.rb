@@ -86,7 +86,6 @@ class Student
       SELECT *
       FROM students
       WHERE grade = 10
-      -- ORDER BY = student
       LIMIT = 1
     SQL
 
