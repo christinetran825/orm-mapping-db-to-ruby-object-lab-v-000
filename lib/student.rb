@@ -29,7 +29,7 @@ class Student
       SELECT *
       FROM students
       WHERE name = ?
-      LIMIT ?
+      LIMIT 1
     SQL
 
     DB[:conn].execute(sql, name).map do |row|
@@ -50,7 +50,7 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      WHERE grade = ?
+      WHERE grade = 9
     SQL
 
     DB[:conn].execute(sql).map do |row|
@@ -62,7 +62,7 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      WHERE grade < ?
+      WHERE grade < 12
     SQL
 
     DB[:conn].execute(sql).map do |row|
@@ -85,8 +85,8 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      WHERE grade = ?
-      ORDER BY = id
+      WHERE grade = 10
+      ORDER BY = student
       LIMIT = 1
     SQL
 
