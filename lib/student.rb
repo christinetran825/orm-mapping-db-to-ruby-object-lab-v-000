@@ -27,7 +27,8 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      VALUES (?) = name
+      WHERE name = ?
+      LIMIT 1
     SQL
     DB[:conn].execute(sql)
   end
