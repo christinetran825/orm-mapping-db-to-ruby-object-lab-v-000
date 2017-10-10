@@ -102,7 +102,6 @@ class Student
     SQL
 
     DB[:conn].execute(sql, x)
-    end
   end
 
 
