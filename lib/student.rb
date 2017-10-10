@@ -86,6 +86,7 @@ class Student
       SELECT COUNT(*)
       FROM students
       WHERE grade = ?
+      LIMIT = ?
     SQL
 
     DB[:conn].execute(sql).map do |row|
