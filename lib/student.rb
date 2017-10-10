@@ -47,6 +47,27 @@ class Student
     DB[:conn].execute(sql, self.name, self.grade)
   end
 
+  def self.count_all_students_in_grade_9
+    
+  end
+
+  def self.students_below_12th_grade
+    
+  end
+
+  def self.first_X_students_in_grade_10
+    
+  end
+
+  def self.first_student_in_grade_10
+    
+  end
+
+  def self.all_students_in_grade_X
+    
+  end
+
+
   def self.create_table
     sql = <<-SQL
     CREATE TABLE IF NOT EXISTS students (
