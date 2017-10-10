@@ -70,19 +70,6 @@ class Student
     end
   end
 
-  # describe '.students_below_12th_grade' do
-  #   it 'returns an array of all students in grades 11 or below' do
-  #     pat.name = "Pat"
-  #     pat.grade = 12
-  #     pat.save
-  #     sam.name = "Sam"
-  #     sam.grade = 10
-  #     sam.save
-  #
-  #     all_but_12th = Student.students_below_12th_grade
-  #     expect(all_but_12th.size).to eq(1)
-  #   end
-
   def self.first_X_students_in_grade_10
 
   end
