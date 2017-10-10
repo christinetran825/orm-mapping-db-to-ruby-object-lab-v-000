@@ -36,22 +36,6 @@ class Student
     end.first
   end
 
-  # describe 'retrieving data from the db' do
-  #   describe '.find_by_name' do
-  #
-  #     it 'returns an instance of student that matches the name from the DB' do
-  #       pat.name = "Pat"
-  #       pat.grade = 12
-  #       pat.save
-  #
-  #       pat_from_db = Student.find_by_name("Pat")
-  #       expect(pat_from_db.name).to eq("Pat")
-  #       expect(pat_from_db).to be_an_instance_of(Student)
-  #     end
-  #   end
-
-
-
   def save
     sql = <<-SQL
       INSERT INTO students (name, grade)
