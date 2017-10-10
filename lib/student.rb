@@ -27,7 +27,7 @@ class Student
     sql = <<-SQL
       SELECT *
       FROM students
-      VALUES (?)
+      VALUES (?) = name
     SQL
     DB[:conn].execute(sql)
   end
